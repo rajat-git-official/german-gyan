@@ -1,0 +1,65 @@
+/* /src/sections/Courses/CoursesStyles.module.css */
+
+.coursesSection {
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .description {
+    max-width: 700px;
+    margin: 0.5rem auto 2rem auto;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  
+  .offerTitle {
+    margin: 2rem 0 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .cardGrid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+  
+  .courseCard {
+    background-color: var(--color-accent);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .courseCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courseCard h4 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+  }
+  
+  .courseCard p {
+    margin-bottom: 0.4rem;
+    color: var(--color-text);
+  }
+  
+  @media (min-width: 768px) {
+    .cardGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .cardGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

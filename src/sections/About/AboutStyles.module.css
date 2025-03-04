@@ -1,0 +1,31 @@
+/* /src/sections/About/AboutStyles.module.css */
+
+.aboutSection {
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1rem auto 2rem auto;
+    max-width: 700px;
+    color: var(--color-text);
+  }
+  
+  .reasons ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .reasons li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: var(--color-text);
+  }
+  

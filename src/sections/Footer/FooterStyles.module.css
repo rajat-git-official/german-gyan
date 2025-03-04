@@ -1,7 +1,35 @@
-.container {
+/* /src/sections/Footer/FooterStyles.module.css */
+
+.footer {
   text-align: center;
-  p {
-    font-size: 16px;
-    color: var(--footer-text-color);
-  }
+  padding: 1.5rem 2rem;
+  /* Use the same dark color */
+  background-color: #002e54; /* or var(--color-primary) */
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  transition: background-color var(--transition-speed);
+  margin-top: 2rem;
+}
+
+
+.footer p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  color: #fff;
+  font-weight: 500;
+  transition: opacity var(--transition-speed);
+}
+
+.socials a:hover {
+  opacity: 0.8;
 }

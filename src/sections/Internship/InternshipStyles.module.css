@@ -1,0 +1,43 @@
+/* /src/sections/Internship/InternshipStyles.module.css */
+
+.internshipSection {
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .description {
+    max-width: 700px;
+    margin: 0.5rem auto 2rem auto;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  
+  .applyBox {
+    background-color: var(--color-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    color: var(--color-text);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .applyBox:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applyBox h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .applyBox p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  

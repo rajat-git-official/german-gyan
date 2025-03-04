@@ -1,0 +1,111 @@
+/* /src/common/NavBar/NavBar.module.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    /* Use a dark color instead of white */
+    background-color: #002e54; /* or var(--color-primary) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 2rem;
+    z-index: 999;
+    transition: background-color var(--transition-speed);
+  }
+  
+  
+  /* LOGO */
+  .logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  /* Nav links container */
+  .navLinks {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  /* A simple fade + slide in/out could be done with transitions, 
+     but for clarity, we'll just toggle display or transform */
+  .navActive {
+    /* We add this class when menuOpen=true (mobile) */
+  }
+  
+  /* Nav items hover effect */
+  .navLinks li {
+    transition: opacity var(--transition-speed);
+  }
+  
+  .navLinks li:hover {
+    opacity: 0.8;
+  }
+  
+  .navLinks a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* THEME TOGGLE BUTTON */
+  .themeToggle {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity var(--transition-speed);
+  }
+  
+  .themeToggle:hover {
+    opacity: 0.8;
+  }
+  
+  /* HAMBURGER ICON - displayed on mobile only */
+  .hamburger {
+    display: none; /* hidden by default on desktop */
+    cursor: pointer;
+  }
+  
+  /* Bars inside hamburger icon */
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* RESPONSIVE BREAKPOINTS */
+  @media (max-width: 768px) {
+    /* Hide the nav links row by default on mobile. We'll show it when user toggles. */
+    .navLinks {
+      position: absolute;
+      top: 70px; /* just under the navbar */
+      right: 0;
+      background-color: var(--color-primary);
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      /* Hidden until .navActive is added: */
+      transform: translateY(-150%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .navActive {
+      transform: translateY(0);
+    }
+  
+    /* Show hamburger, hide normal nav */
+    .hamburger {
+      display: block;
+    }
+  }
+  

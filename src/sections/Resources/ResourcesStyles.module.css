@@ -1,0 +1,60 @@
+/* /src/sections/Resources/ResourcesStyles.module.css */
+
+.resourcesSection {
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .intro {
+    max-width: 700px;
+    margin: 0.5rem auto 2rem auto;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  
+  .resourceLinks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .resourceCard {
+    background-color: var(--color-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: var(--color-text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .resourceCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resourceCard h4 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+  }
+  
+  .subtitle {
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .details {
+    max-width: 700px;
+    margin: 1rem auto 0 auto;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  
+  @media (min-width: 768px) {
+    .resourceLinks {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

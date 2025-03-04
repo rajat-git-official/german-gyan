@@ -1,0 +1,52 @@
+/* /src/sections/Blog/BlogStyles.module.css */
+
+.blogSection {
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .intro {
+    max-width: 700px;
+    margin: 0.5rem auto 2rem auto;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  
+  .blogGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .blogCard {
+    background-color: var(--color-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: var(--color-text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .blogCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogCard h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+  }
+  
+  .blogCard p {
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .blogGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
