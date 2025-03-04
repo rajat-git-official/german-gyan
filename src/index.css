@@ -16,6 +16,8 @@
     --btn-bg: var(--color-primary);
     --btn-text: #ffffff;
     --transition-speed: 0.3s;
+    --hero-overlay: rgba(0, 70, 127, 0.5); /* Or whatever you want in light mode */
+    --bubble-color: rgba(0, 0, 0, 0.2); /* Dark/translucent in light mode */
   }
   
   /* ---------- DARK MODE ---------- */
@@ -36,6 +38,8 @@
     /* Buttons in dark mode */
     --btn-bg: #f5f5f5;
     --btn-text: #1e1e1e;
+    --hero-overlay: rgba(0, 70, 127, 0.3); /* More transparent in dark mode, or vice versa */
+    --bubble-color: rgba(255, 255, 255, 0.2); /* White/translucent in dark mode */
     
     /* If you want to override transition speed, do it here, otherwise it stays the same. */
   }

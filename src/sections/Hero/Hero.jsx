@@ -4,7 +4,17 @@ import styles from './HeroStyles.module.css';
 
 function Hero() {
   return (
-    <section id="hero" className={`${styles.heroSection} fade-in`}>
+    <section id="hero" className={styles.heroSection}>
+      {/* Bubble background container */}
+      <div className={styles.bubbleContainer}>
+        <div className={styles.bubble}></div>
+        <div className={styles.bubble}></div>
+        <div className={styles.bubble}></div>
+        <div className={styles.bubble}></div>
+        <div className={styles.bubble}></div>
+        {/* Add as many bubbles as you like */}
+      </div>
+
       <div className={styles.overlay}></div>
       <div className={styles.heroContent}>
         <h1>Master German with Confidence—Go Drive & Get Bossy!</h1>
