@@ -1,43 +1,46 @@
-/* /src/index.css */
-
-/* 
-  Root-level CSS variables for both Light and Dark themes 
-  (You can customize these colors as you like).
-*/
+/* ---------- LIGHT MODE ---------- */
 :root {
     --color-bg: #ffffff;
     --color-text: #333333;
-    --color-primary: #00467f;
+    /* Choose your preferred color for primary, whichever you want: */
+    --color-primary: #002e54; 
     --color-secondary: #086EBE;
     --color-accent: #f5f5f5;
-    --navbar-bg: #00467f;       /* Nav & footer background (light mode) */
-    --navbar-text: #ffffff;     /* Text color on the navbar (light mode) */
-    --hamburger-color: #ffffff; /* Hamburger lines color */
-    /* etc... */
   
+    /* Navbar variables */
+    --navbar-bg: #002e54; /* same as --color-primary if you want */
+    --navbar-text: #fff;
+    --hamburger-color: #fff;
+  
+    /* Button & transitions */
     --btn-bg: var(--color-primary);
     --btn-text: #ffffff;
-  
     --transition-speed: 0.3s;
   }
   
-  /* Dark Theme Overrides */
+  /* ---------- DARK MODE ---------- */
   [data-theme='dark'] {
     --color-bg: #1e1e1e;
     --color-text: #f3f3f3;
-    --color-primary: #f5f5f5;
+  
+    /* For dark mode, you can keep the same color or pick something different: */
+    --color-primary: #1e1e1e;  
     --color-secondary: #777777;
     --color-accent: #2c2c2c;
   
+    /* Navbar in dark mode */
+    --navbar-bg: #1e1e1e; 
+    --navbar-text: #fff;
+    --hamburger-color: #fff;
+  
+    /* Buttons in dark mode */
     --btn-bg: #f5f5f5;
     --btn-text: #1e1e1e;
-    --navbar-bg: #1e1e1e;       /* A dark color for the navbar in dark mode */
-    --navbar-text: #ffffff;     /* Keep text white for contrast */
-    --hamburger-color: #ffffff; /* White lines for hamburger */
-    /* etc... */
+    
+    /* If you want to override transition speed, do it here, otherwise it stays the same. */
   }
   
-  /* Global Resets */
+  /* ---------- GLOBAL RESETS & CLASSES ---------- */
   * {
     margin: 0;
     padding: 0;
@@ -52,7 +55,6 @@
     transition: background-color var(--transition-speed), color var(--transition-speed);
   }
   
-  /* Utility Classes */
   .container {
     width: 90%;
     max-width: 1200px;
@@ -77,7 +79,6 @@
     opacity: 0.9;
   }
   
-  /* Section Titles */
   .sectionTitle {
     font-size: 2rem;
     margin-bottom: 1.5rem;
